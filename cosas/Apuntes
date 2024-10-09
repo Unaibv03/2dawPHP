@@ -1,0 +1,18 @@
+Para pasar valores por la URL hay que escribir lo siguiente dentro de la variable que queremos inicializar.
+
+$a = $_GET ['a'];
+Y en la URL hay que escribirlos así:
+
+http://localhost/DAW2/Ejercicio.php?a=5&b=10
+
+Para comprobar que existen los datos que han añadido:
+Con la función isset
+if(isset($_GET['a'])&&isset($_GET['b'])){
+hacemos la operación en el caso de que tengamos los valores
+}else{
+    printf ('Faltan datos');
+}
+
+Para imprimir por pantalla:
+
+printf(aqui ponemos lo que sea);
